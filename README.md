@@ -16,6 +16,7 @@ ________________________________________
 •	连接Runeskee压力传感器
 
 •	通过设备管理器记录下两个设备的COM端口号
+
 2.	配置文件设置
 打开config.yml并修改以下参数：
 
@@ -26,6 +27,7 @@ ________________________________________
 •	trigger_com: 替换为Trigger Box的COM端口
 
 •	screen_size: 根据实际需求调整屏幕尺寸
+
 3.	压力传感器校准
 
 •	要求被试全力按压Runeskee压力传感器并记录最大值
@@ -33,6 +35,7 @@ ________________________________________
 •	max_force: 设置为最大值的1.25倍
 
 •	top_force: 设置为远超被试全力按压的值（最高6000g）
+
 4.	运行实验
 在VSCode中运行launch_pipeline.py：
 •	程序将自动运行4个子范式：
@@ -44,8 +47,10 @@ ________________________________________
 •	屏幕显示：红线为目标力，动态蓝柱为当前出力
 
 •	每个范式重复5次
+
 5.	数据保存
 测试结果自动保存在mat_data/目录下
+
 6.	结果验证
 使用verify/read_mat.ipynb可视化结果，确认数据记录正确性
 ________________________________________
@@ -66,6 +71,7 @@ ________________________________________
 Installation Dependencies
 1.	Download and install PsychoPy runtime environment
 StandalonePsychoPy-2025.1.1-win64-py3.8.exe(https://github.com/psychopy/psychopy/releases/download/2025.1.1/StandalonePsychoPy-2025.1.1-win64-py3.8.exe)
+
 2.	Install Runeskee sensor driver
 With Runeskee pressure sensor connected to your computer, install install/CH341SER_DRIVER.EXE
 ________________________________________
@@ -77,6 +83,7 @@ First Run Guide
 •	Connect Runeskee pressure sensor
 
 •	Record COM port numbers for both devices via Device Manager
+
 2.	Configuration Setup
 Open config.ymland modify:
 
@@ -87,6 +94,7 @@ Open config.ymland modify:
 •	trigger_com: COM port for Trigger Box
 
 •	screen_size: Adjust according to display requirements
+
 3.	Sensor Calibration
 
 •	Have subject press sensor with maximum force and record value
@@ -94,9 +102,12 @@ Open config.ymland modify:
 •	max_force: Set to 1.25× maximum recorded value
 
 •	top_force: Set to value far exceeding subject's max (max 6000g)
+
 4.	Run Experiment
 Execute launch_pipeline.pyin VSCode:
+
 •	Automatically runs 4 sub-paradigms:
+
 1.	Maximum force test
 2.	80% sustained force
 3.	40% sustained force
@@ -105,8 +116,10 @@ Execute launch_pipeline.pyin VSCode:
 •	Screen display: Red line = target force, Blue bar = current force
 
 •	Each paradigm repeats 5 times
+
 5.	Data Saving
 Results automatically saved in mat_data/directory
+
 6.	Result Verification
 Use verify/read_mat.ipynbto visualize results and confirm data integrity
 ________________________________________
