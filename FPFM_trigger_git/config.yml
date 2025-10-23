@@ -1,0 +1,15 @@
+# 配置文件（使用最简单的YAML子集）
+psychopy_py: 'C:\tool\PsychoPy\python'
+# CMCUreader.py
+serial_port: 'COM5'  # recorder COM
+
+# run.py
+screen_size: [1680, 1020]  # 屏幕尺寸
+
+# UserCenter.py
+max_force: 700   # 能达成的最大力值
+top_force: 2000  # 无法达成的最大力值
+trigger_com: 'COM6'
+
+# 触发同步（影响 run.py 的 send_trigger 与 UserCenter 的硬件触发初始化）
+synchronized_with_eeg: false
