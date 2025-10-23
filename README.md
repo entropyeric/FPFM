@@ -1,6 +1,7 @@
 FPFM - Finger Pressure Force Measurement Paradigm
 项目描述 | Project Description
 这是一个进行手指压力力量测试的范式，基于PsychoPy、Neuracle NEO(微创硬膜外脑机接口)设备和Runeskee压力传感器。
+
 This is a finger pressure force measurement paradigm based on PsychoPy, Neuracle NEO (minimally invasive epidural BCI) device and Runeskee pressure sensor.
 ________________________________________
 安装依赖 | Installation Dependencies
