@@ -43,15 +43,6 @@ ________________________________________
 •	在config.yml中将synchronized_with_eeg设置为false
 •	可跳过步骤1和2中与Trigger Box相关的操作
 
-FPFM/
-├── mat_data/          # 实验数据存储
-├── verify/            # 数据验证工具
-│   └── read_mat.ipynb # 结果可视化
-├── install/           # 驱动安装文件
-│   └── CH341SER_DRIVER.EXE
-├── config.yml         # 主配置文件
-└── launch_pipeline.py # 主执行文件
-
 
 ________________________________________________________________________________
 English Version
@@ -98,15 +89,6 @@ Non-synchronized Mode
 If intracranial EEG and force data synchronization is not required:
 •	Set synchronized_with_eegto falsein config.yml
 •	Skip Trigger Box-related steps in sections 1 and 2
-
-FPFM/
-├── mat_data/          # Experiment data storage
-├── verify/            # Data verification tools
-│   └── read_mat.ipynb # Results visualization
-├── install/           # Driver installation files
-│   └── CH341SER_DRIVER.EXE
-├── config.yml         # Main configuration
-└── launch_pipeline.py # Main executable
 
 
 
